@@ -298,7 +298,7 @@ This is a synchronous action."
 (defun construct-tf-package (provider installed-version)
   "Construct `TF-PACKAGE' using PROVIDER and INSTALLED-VERSION."
   (make-tf-package :display-name (lsp-get provider :display_name)
-                   :doc-link (lsp-get provider :docs_link)
+                   :doc-link (lsp-get provider :docs-link)
                    :installed-version installed-version
                    :version-constraint (lsp-get provider :version_constraint)))
 
